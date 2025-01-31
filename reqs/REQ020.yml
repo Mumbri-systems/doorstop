@@ -1,0 +1,10 @@
+active: true
+derived: false
+header: 'ReqIF support'
+level: 2.4.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: |
+  Doorstop **shall** support the import of ReqIF and ReqIFz documents and respect the ReqIF standard.

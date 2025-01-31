@@ -1,0 +1,9 @@
+active: true
+derived: false
+header: ''
+level: 2.5.1
+links: []
+normative: true
+ref: ''
+reviewed: null
+text: 'Doorstop **shall** support the export of ReqIF and ReqIFz documents and respect the ReqIF standard.'
