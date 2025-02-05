@@ -1,0 +1,16 @@
+active: true
+derived: false
+header: ''
+level: 1.4.1
+links:
+- REQ022: NV3yOwBC2fY1WYWV4VwwvUDpPyKwZniysEnRu5wIJZE=
+- TUT015: ClzVApdcWd-VQIuz7XN_SRyRvlFUVD9A6XONsF9ZNT4=
+normative: true
+ref: ''
+references:
+- keyword: test_reqif_export
+  path: doorstop/cli/tests/tutorial.py
+  type: file
+reviewed: jEK0qp0DWvBbs8pHraWUMmPI_hONapQen0oPQPUxyYs=
+text: |
+  Explicit test of ReqIF export

@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+import reqif
 
 from doorstop.cli.tests import FILES, ROOT
 
@@ -163,6 +164,23 @@ class TestSection1(TestBase):
         self.doorstop("export TST")
         self.doorstop("export all dirpath/to/exports")
         self.doorstop("export REQ path/to/req.xlsx")
+
+    def test_reqif_export(self):
+        """Verify ReqIF and ReqIFz export functionality"""
+        # Create basic document, from previous test
+        self.test_tutorial_section_4()
+
+        self.doorstop("export REQ path/to/req.reqif")
+        self.doorstop("export REQ path/to/req.reqifz")
+
+    def test_reqif_standard(self):
+        """Validate that exported files match standard"""
+        # generate example reqif and reqifz
+
+        self.test_reqif_export()
+        # TODO find correct command
+        # reqif.validate("path/to/req.reqif")
+        # reqif.validate("path/to/req.reqifz")
 
     def test_validate_cycles(self):
         """Verify cycle detection is working."""
