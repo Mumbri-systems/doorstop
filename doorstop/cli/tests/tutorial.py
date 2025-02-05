@@ -137,6 +137,13 @@ class TestSection1(TestBase):
         shutil.copy(path, dirpath)
         self.doorstop("import path/to/exported.xlsx HLR")
 
+    def test_reqif_imports(self):
+        """Verify ReqIF and ReqIFz import functionality"""
+        path = os.path.join(FILES, "exported.reqif")
+        pathz = os.path.join(FILES, "exported.reqifz")
+        self.doorstop(f"import {path} HLR")
+        self.doorstop(f"import {pathz} HLR")
+
     def test_tutorial_section_4(self):
         """Verify tutorial section 4.0 is working."""
 

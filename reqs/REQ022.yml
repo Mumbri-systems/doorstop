@@ -5,5 +5,6 @@ level: 2.5.1
 links: []
 normative: true
 ref: ''
-reviewed: null
-text: 'Doorstop **shall** support the export of ReqIF and ReqIFz documents and respect the ReqIF standard.'
+reviewed: NV3yOwBC2fY1WYWV4VwwvUDpPyKwZniysEnRu5wIJZE=
+text: |
+  Doorstop **shall** support the export of ReqIF and ReqIFz documents and respect the ReqIF standard.

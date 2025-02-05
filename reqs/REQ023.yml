@@ -5,5 +5,6 @@ level: 2.5.1.1
 links: []
 normative: true
 ref: ''
-reviewed: null
-text: 'Doorstop **shall** generate UUIDs for each exported element, if it does not yet exist'
+reviewed: iHSpZLo7L2Ec0WAm7_rjylHF-GnclLlIh3wX2Y554R4=
+text: |
+  Doorstop **shall** generate UUIDs for each exported element, if it does not yet exist

@@ -1,0 +1,16 @@
+active: true
+derived: false
+header: ''
+level: 1.3.1
+links:
+- REQ020: lSSRahGlnCNwG8ihKOJA_GpEBRZ0LA2vQXNlcuwroMA=
+- TUT016: ZA0D9hs_RcGQvBR3EjlVdAYRp1lonVCBBq29AVU-vPE=
+normative: true
+ref: ''
+references:
+- keyword: test_reqif_imports
+  path: doorstop/cli/tests/tutorial.py
+  type: file
+reviewed: LhITTGJ0lo92uqUinkfEydcUPvGNe1UzetD-F2s5ovU=
+text: |
+  Explicit test of ReqIF and ReqIFz imports
