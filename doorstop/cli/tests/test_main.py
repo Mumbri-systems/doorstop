@@ -84,3 +84,15 @@ class TestMain(SettingsTestCase):
             spec.loader.exec_module(runpy)
             # Assert
             self.assertIsNotNone(runpy)
+
+
+    def test_get_or_gen(self):
+        """Verify ability to fetch information or generate and save said information if it is not found"""
+        
+        # Create a basic document
+        self.doorstop("create REQ ./reqs")
+
+        # get a datum that does exist
+        # 
+        pass
+
