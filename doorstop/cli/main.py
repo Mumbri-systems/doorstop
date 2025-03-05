@@ -544,26 +544,7 @@ def _publish(subs, shared):
         action="store_true",
     )
 
-def get_or_gen(obj, element, prompt=False, default=None):
-    """Fetch value from object.  If it does not exist, generate a new value and save it to object.
 
-    :param obj: is object from which to fetch element value
-    :param element: is element of object of interest
-    :param prompt: is whether editor will be launched to let user input value before saving
-    :param default: is default value if it does not exist
-
-    """
-
-    if getattr(obj, element, None) is not None:
-        return getattr(obj, element)
-    if not prompt:
-        setattr(obj, element, default)
-        obj.save()
-        return getattr(obj, element)
-    new_val = editor.edit_tmp_content(title=element,original_content=default)
-    setattr(obj, element, new_val)
-    obj.save()
-    return getattr(obj, element)
 
     
 
